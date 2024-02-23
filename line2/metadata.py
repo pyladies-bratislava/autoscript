@@ -39,5 +39,5 @@ def save_metadata_to_image():
 
 
 if __name__ == "__main__":
-    #converto_to_png()
+    converto_to_png()
     save_metadata_to_image()
