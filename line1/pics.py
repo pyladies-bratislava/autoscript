@@ -7,8 +7,10 @@ def organize_pics(folder):
     for filename in os.listdir(folder):
         # Get information from the filename
         path = os.path.join(folder, filename)
-        year = filename[:4]
+        year = filename[:4]  # String slicing by index
         month = filename[4:6]
+
+        # Define folder's name, e.g. 2023/05
         new_folder = os.path.join(folder, year, month)
 
         # Create the folder if it doesn't exist
@@ -22,5 +24,6 @@ def organize_pics(folder):
         # shutil.move(pic_path, os.path.join(pic_new_folder, pic_name))
 
 
+# Entry point of the script/program
 if __name__ == "__main__":
     organize_pics('pictures')
