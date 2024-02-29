@@ -26,4 +26,4 @@ def organize_pics(folder):
 
 # Entry point of the script/program
 if __name__ == "__main__":
-    organize_pics('pictures')
+    organize_pics("pictures")

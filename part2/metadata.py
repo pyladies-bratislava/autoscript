@@ -21,7 +21,7 @@ def save_metadata_to_image():
     for filename in os.listdir("pictures"):
         try:
             img = Image.open(f"pictures/{filename}")
-            with open("metadata/metadata.json", 'r') as f:
+            with open("metadata/metadata.json", "r") as f:
                 metadata = json.load(f)
             for image_name, image_data in metadata.items():
                 if image_name == filename[:-4]:
