@@ -24,26 +24,26 @@ The workshop is prepared to last 2 hours. The schedule is as follows:
 
 ## Resources
 The workshop is designed to accommodate several Python levels. If you are new to Python, 
-you can follow our `line1`. More advanced users can check `line1` and then follow `line2` 
-and/or `line3`.
+you can follow our `part1` which is the basis of the workshop. More advanced users can 
+start with `part1` and then follow `part2` and/or `part3`.
 
 
-### Line 1
+### Part 1
 This is the basis of this workshop: a script to organize pictures in your computer based
-on their filenames. You can find the script in the `line1` folder.
+on their filenames. You can find the script in the `part1` folder.
 
 
-### Line 2
-After taking a look and running the script in `line1` you can move on to the `line2` folder.
+### Part 2
+After taking a look and running the script in `part1` you can move on to the `part2` folder.
 Here you will need to use more advanced Python concepts like using a virtualenv and installing
 Python modules to fulfil the needs of the script. 
 
-In this line you will organize pictures in your computer based on the metadata that they contain.
+In this part you will organize pictures in your computer based on the metadata that they contain.
 We have limited the pictures to `.png` files to make it easier to understand the script. You can
 use the Pillow library to read the metadata of the pictures and then organize them in folders.
 
 
-### Line 3
-After being comfortable with the previous scripts this line will take you a bit further. We will use
+### Part 3
+After being comfortable with the previous scripts this part will take you a bit further. We will use
 the `tkinter` module to build a GUI for the script. This will allow you to select the folder where the
 pictures are and then organize them based on some criteria.
