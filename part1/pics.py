@@ -34,4 +34,4 @@ def organize_pics(folder):
     print(f"Organizing pictures in {folder} completed.")
 
 
-organize_pics("pictures")
+organize_pics("photos")
