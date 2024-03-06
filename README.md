@@ -22,12 +22,6 @@ The workshop is prepared to last 2 hours. The schedule is as follows:
 5. Wrap up
 
 
-## Resources
-The workshop is designed to accommodate several Python levels. If you are new to Python, 
-you can follow our `part1` which is the basis of the workshop. More advanced users can 
-start with `part1` and then follow `part2` and/or `part3`.
-
-
 ### Part 1 - Sort
 This is the basis of this workshop: a script to organize pictures in your computer based
 on their filenames. You can find the script in the `sort.py` file.
@@ -46,4 +40,4 @@ Python modules to fulfil the needs of the script.
 In this part you will organize pictures in your computer based on the metadata that they contain.
 We have limited the pictures to `.png` files to make it easier to understand the script. You can
 use the Pillow library to read the metadata of the pictures and then organize them in folders.
-You can find the script in the `part3` folder.
+You can find the script in the `optional` folder.
