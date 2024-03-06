@@ -9,18 +9,22 @@ def photos_app():
     folder = None
 
     window = tk.Tk()
+    window.title("Sort pictures")
+    window.geometry("400x300")
 
     def handle_click(event):
         window.folder = filedialog.askdirectory()
 
     # Chose a folder to organize
     label = tk.Label(text="Select a folder with photos:")
-    label.pack()
-    button1 = tk.Button(window, text="Select")
+    label.pack(side='left')
+    button1 = tk.Button(window, text="Select", width=15, height=2)
     button1.bind("<Button-1>", handle_click)
-    button1.pack()
+    button1.pack(side='right', padx=2)
 
-    button2 = tk.Button(window, text="Organize pictures", command=lambda: organize_pics(window.folder))
-    button2.pack()
+    label = tk.Label(text="Organize pictures!")
+    label.pack(side='right', padx=1)
+    button2 = tk.Button(window, text="Click here to organize pictures", width=25, height=2, command=lambda: organize_pics(window.folder))
+    button2.pack(side='left', padx=2)
 
     window.mainloop()
