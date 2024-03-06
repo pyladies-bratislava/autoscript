@@ -26,12 +26,9 @@ def organize_pics(folder):
             os.makedirs(new_folder)
             print(f"Created new folder: {new_folder}")
 
-        # Step 4 - Copy the file to the appropriate folder (keeps the original)
+        # Step 4 - Copy the file to the appropriate folder
         new_filepath = os.path.join(new_folder, filename)
         shutil.copy(filepath, new_filepath)
         print(f"File {filename} copied to {new_folder}")
 
     print(f"Organizing pictures in {folder} completed.")
-
-
-organize_pics("photos")
