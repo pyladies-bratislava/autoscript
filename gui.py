@@ -15,13 +15,19 @@ def photos_app():
 
     # Chose a folder to organize
     label = tk.Label(text="Select a folder with photos:")
-    label.pack(side="left")
-    button1 = tk.Button(window, text="Select", width=15, height=2)
+    label.pack(pady=15)
+    button1 = tk.Button(
+        window,
+        text="Select",
+        width=15,
+        height=2
+    )
     button1.bind("<Button-1>", handle_click)
-    button1.pack(side="right", padx=2)
+    button1.pack()
 
+    # Organize pictures
     label = tk.Label(text="Organize pictures!")
-    label.pack(side="right", padx=1)
+    label.pack(pady=19)
     button2 = tk.Button(
         window,
         text="Click here to organize pictures",
@@ -29,6 +35,6 @@ def photos_app():
         height=2,
         command=lambda: organize_pics(window.folder),
     )
-    button2.pack(side="left", padx=2)
+    button2.pack()
 
     window.mainloop()
