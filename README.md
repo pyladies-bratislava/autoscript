@@ -31,13 +31,3 @@ on their filenames. You can find the script in the `sort.py` file.
 After being comfortable with the previous script this part will take you a bit further. We will use
 the `tkinter` module to build a GUI for the script. This will allow you to select the folder where the
 pictures are and then organize them based on some criteria. You can find the script in the `gui.py` file.
-
-
-### Part 3 - Metadata
-Here you will need to use more advanced Python concepts like using a virtualenv and installing
-Python modules to fulfil the needs of the script. 
-
-In this part you will organize pictures in your computer based on the metadata that they contain.
-We have limited the pictures to `.png` files to make it easier to understand the script. You can
-use the Pillow library to read the metadata of the pictures and then organize them in folders.
-You can find the script in the `optional` folder.
