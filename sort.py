@@ -3,7 +3,7 @@ import shutil
 
 
 # Organize pictures by year/month according to the filename
-def organize_pics(folder):
+def sort_pics(folder):
 
     print(f"Organizing photos in {folder} folder...")
 
@@ -18,7 +18,7 @@ def organize_pics(folder):
         print(f"Path: {filepath} Year: {year}, Month: {month}")
 
         # Step 2 - Define folder's name, e.g. 2023/05
-        new_folder = os.path.join("organized", year, month)
+        new_folder = os.path.join("sorted", year, month)
         print(f"New folder: {new_folder}")
 
         # Step 3 - Create a folder if it doesn't exist
@@ -31,4 +31,4 @@ def organize_pics(folder):
         shutil.copy(filepath, new_filepath)
         print(f"File {filename} copied to {new_folder}")
 
-    print(f"Organizing pictures in {folder} completed.")
+    print(f"Sorted pictures in {folder} completed.")
