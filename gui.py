@@ -9,6 +9,8 @@ def photos_app():
 
     # Step 1 - Create a window
     window = tk.Tk()
+    window.title("Sort photos")
+    window.geometry("400x300")
 
     # Handlers for events
     def handle_select(event):
@@ -22,7 +24,7 @@ def photos_app():
     select_label.pack()
 
     # Step 3 - Add a button to the window
-    select_button = tk.Button(window, text="Select folder")
+    select_button = tk.Button(window, text="Select folder", bg='blue', fg='white')
     select_button.bind("<Button-1>", handle_select)  # <Button-1> is the left mouse button click event
     select_button.pack()
 
@@ -31,7 +33,7 @@ def photos_app():
     sort_label.pack()
 
     # Step 5 - Add another button to the window
-    sort_button = tk.Button(window, text="Sort photos")
+    sort_button = tk.Button(window, text="Sort photos", bg='blue', fg='white')
     sort_button.bind("<Button-1>", handle_sort)  # <Button-1> is the left mouse button
     sort_button.pack()
 
