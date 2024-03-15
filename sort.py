@@ -19,7 +19,7 @@ def sort_photos(folder):
         print(f"Path: {filepath} Year: {year}, Month: {month}")
 
         # Step 2 - Define folder's name, e.g. 2023/05
-        new_folder = os.path.join("sorted", year, month)
+        new_folder = os.path.join("newname", year, month)
         print(f"New folder: {new_folder}")
 
         # Step 3 - Create a folder if it doesn't exist
