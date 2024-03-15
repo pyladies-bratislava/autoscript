@@ -2,16 +2,17 @@ import os
 import shutil
 
 
-# Organize pictures by year/month according to the filename
 def sort_pics(folder):
-
-    print(f"Organizing photos in {folder} folder...")
+    # Sort pictures by year/month according to the filename
+    print(f"Sorting photos in {folder} folder...\n------")
 
     # For each file in the folder
     for filename in os.listdir(folder):
 
-        # Step 1 - Get information from the filename
+        # Step 0 - Print the filename
         print(f"Processing {filename}")
+
+        # Step 1 - Get information from the filename
         filepath = os.path.join(folder, filename)
         year = filename[0:4]  # String slicing by index 0 1 2 3
         month = filename[4:6]  # String slicing by index 4 5
@@ -30,5 +31,7 @@ def sort_pics(folder):
         new_filepath = os.path.join(new_folder, filename)
         shutil.copy(filepath, new_filepath)
         print(f"File {filename} copied to {new_folder}")
+
+        print("------")
 
     print(f"Sorted pictures in {folder} completed.")
