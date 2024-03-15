@@ -6,8 +6,10 @@ def sort_photos(folder):
     # Sort photos by year/month according to the filename
     print(f"Sorting photos in {folder} ...\n------")
 
+    filenames = os.listdir(folder)
+
     # For each file in the folder
-    for filename in os.listdir(folder):
+    for filename in filenames:
 
         # Step 0 - Print the filename
         print(f"Step 0 - Processing {filename}")
@@ -34,4 +36,5 @@ def sort_photos(folder):
 
         print("------")
 
+    print(f"Sorted {len(filenames)} photos.")
     print(f"Sorting pictures in {folder} completed.")
