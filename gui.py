@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import filedialog
 
-from sort import sort_pics
+from sort import sort_photos
 
 
 def photos_app():
-    # Make a simple GUI application that sorts pictures by year/month according to the filename.
+    # Make a simple GUI application that sorts photos
 
     # Step 1 - Create a window
     window = tk.Tk()
@@ -15,7 +15,7 @@ def photos_app():
         window.folder = filedialog.askdirectory()
 
     def handle_sort(event):
-        sort_pics(window.folder)
+        sort_photos(window.folder)
 
     # Step 2 - Add a label to the window
     label = tk.Label(text="Select a folder with photos:")
@@ -30,7 +30,7 @@ def photos_app():
     label = tk.Label(text="Sort photos")
     label.pack()
 
-    # Step 5 - Add another button to the window that calls our sort_pics function
+    # Step 5 - Add another button to the window
     sort_button = tk.Button(window, text="Sort photos")
     sort_button.bind("<Button-1>", handle_sort)  # <Button-1> is the left mouse button
     sort_button.pack()

@@ -2,9 +2,9 @@ import os
 import shutil
 
 
-def sort_pics(folder):
-    # Sort pictures by year/month according to the filename
-    print(f"Sorting photos in {folder} folder...\n------")
+def sort_photos(folder):
+    # Sort photos by year/month according to the filename
+    print(f"Sorting photos in {folder} ...\n------")
 
     # For each file in the folder
     for filename in os.listdir(folder):
@@ -34,4 +34,4 @@ def sort_pics(folder):
 
         print("------")
 
-    print(f"Sorted pictures in {folder} completed.")
+    print(f"Sorting pictures in {folder} completed.")
