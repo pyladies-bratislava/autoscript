@@ -10,28 +10,32 @@ def photos_app():
     # Step 1 - Create a window
     window = tk.Tk()
 
-    # TODO: check if this can go somewhere else
+    # Handle the click event
     def handle_click(event):
         window.folder = filedialog.askdirectory()
+
+    def handle_sort(event):
+        sort_pics(window.folder)
 
     # Step 2 - Add a label to the window
     label = tk.Label(text="Select a folder with photos:")
     label.pack()
 
     # Step 3 - Add a button to the window
-    button1 = tk.Button(window, text="Select")
-    button1.bind("<Button-1>", handle_click)
-    button1.pack()
+    select_button = tk.Button(window, text="Select folder")
+    select_button.bind(
+        "<Button-1>", handle_click
+    )  # <Button-1> is the left mouse button
+    select_button.pack()
 
     # Step 4 - Add another label to the window
-    label = tk.Label(text="Sort pictures!")
+    label = tk.Label(text="Sort photos")
     label.pack()
 
     # Step 5 - Add another button to the window that calls our sort_pics function
-    button2 = tk.Button(
-        window, text="Sort photos", command=lambda: sort_pics(window.folder)
-    )
-    button2.pack()
+    sort_button = tk.Button(window, text="Sort photos")
+    sort_button.bind("<Button-1>", handle_sort)  # <Button-1> is the left mouse button
+    sort_button.pack()
 
     # Step 6 - Start the tkinter main loop
     window.mainloop()
