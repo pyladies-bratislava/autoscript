@@ -5,4 +5,4 @@ from sort import sort_photos
 sort_photos("photos")
 
 # Part 2 - GUI for sorting photos
-#photos_app()
+# photos_app()

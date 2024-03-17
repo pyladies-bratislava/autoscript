@@ -18,8 +18,8 @@ def photos_app():
         sort_photos(window.folder)
 
     # Step 2 - Add a label to the window
-    label = tk.Label(text="Select a folder with photos:")
-    label.pack()
+    select_label = tk.Label(text="Select a folder with photos:")
+    select_label.pack()
 
     # Step 3 - Add a button to the window
     select_button = tk.Button(window, text="Select folder")
@@ -27,8 +27,8 @@ def photos_app():
     select_button.pack()
 
     # Step 4 - Add another label to the window
-    label = tk.Label(text="Sort photos")
-    label.pack()
+    sort_label = tk.Label(text="Sort photos")
+    sort_label.pack()
 
     # Step 5 - Add another button to the window
     sort_button = tk.Button(window, text="Sort photos")
